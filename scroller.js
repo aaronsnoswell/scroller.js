@@ -1,5 +1,6 @@
-/*! Copyright (c) 2012 Aaron Snoswell (http://elucidatedbinary.com)
- * Licensed under the MIT License (LICENSE.txt).
+/**
+ * Copyright (c) 2012 Aaron Snoswell (http://elucidatedbinary.com)
+ * Licensed under the MIT License
  *
  * Based on the jquery mousewheel plugin by Brandon Aaron (https://github.com/brandonaaron/jquery-mousewheel)
  *
