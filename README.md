@@ -1,9 +1,7 @@
 
 # scroller.js
 
-Scroller is a simple stand-alone JavaScript shim that adds cross-browser mouse scroll support. It's the tie to go along with [keymaster](https://github.com/madrobby/keymaster)'s tux.
-
-Scroller is based on the [jquery-mousewheel](https://github.com/brandonaaron/jquery-mousewheel) project by Brandon Aaron.
+Scroller is a simple stand-alone JavaScript shim that adds cross-browser mouse scroll support. It's the tie to go along with [keymaster's](https://github.com/madrobby/keymaster) tux. Scroller is based on the [jquery-mousewheel](https://github.com/brandonaaron/jquery-mousewheel) project by Brandon Aaron.
 
 ## Usage
 
@@ -15,7 +13,7 @@ Include `scroller.js` in your markup.
 
 Scroller has no dependancies and shouldn't interfere with any other JavaScript libraries.
 
-Two global method is exposed, ```scroller```, which is used to attach mouse scroll handlers, and ```descroller``` - used to detach handlers.
+Two global methods are exposed, ```scroller```, which is used to attach mouse scroll handlers, and ```descroller``` - used to detach handlers.
 
 ```javascript
 // Define a mouse-scroll event listener
@@ -35,6 +33,6 @@ descroller(mydiv, ref);
 
 ## License
 
-This script is licensed under the MIT License (LICENSE.txt).
+This script is licensed under the MIT License (see MIT-LICENSE.txt).
 
 Copyright (c) 2012 [Aaron Snoswell](http://elucidatedbinary.com)
