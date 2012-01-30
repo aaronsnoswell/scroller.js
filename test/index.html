@@ -1,0 +1,42 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    
+    <title>mousewheel.js test page</title>
+</head>
+
+<body>
+    
+    <div id="cool" >
+        Scroll that mouse on me, baby!
+    </div>
+    
+    <div id="lame" >
+        ...But this div's not interested in scroll events.
+    </div>
+
+    <script type="text/javascript" src="../mousewheel.js"></script>
+    <script type="text/javascript" >
+        
+        scroller(function(e, delta, deltax, deltay) {
+            console.log("Huzzah", e, delta, deltax, deltay);
+        });
+        
+        scroller("#cool", function(e, delta, deltax, deltay) {
+            console.log("Oooh yeah", e, delta, deltax, deltay);
+            return false;
+        });
+        
+        var callback_ref = scroller("#lame", function(e, delta, deltax, deltay) {
+            console.log("What?", e, delta, deltax, deltay);
+        });
+        
+        unscroller("#lame", callback_ref);
+    </script>
+  
+</body>
+</html>
