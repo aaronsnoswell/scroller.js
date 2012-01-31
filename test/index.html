@@ -19,7 +19,7 @@
         ...But this div's not interested in scroll events.
     </div>
 
-    <script type="text/javascript" src="../mousewheel.js"></script>
+    <script type="text/javascript" src="../scroller.js"></script>
     <script type="text/javascript" >
         
         scroller(function(e, delta, deltax, deltay) {
@@ -35,7 +35,7 @@
             console.log("What?", e, delta, deltax, deltay);
         });
         
-        unscroller("#lame", callback_ref);
+        descroller("#lame", callback_ref);
     </script>
   
 </body>
